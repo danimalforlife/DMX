@@ -1,0 +1,1705 @@
+title: DMX
+author: danimalforlife
+description: X GON' GIVE IT TO YA
+assets:
+###Name replacements###
+#sys.bar#
+- method: binarc
+  multi:
+  - name: msg/us/sys.bar
+  - name: msg/uk/sys.bar
+  name: msg/jp/sys.bar
+  package: kh2_first
+  source:
+  - method: kh2msg
+    name: sys
+    source:
+    - language: en
+      name: msg/Name.yml
+    type: list
+
+#jm.bar#
+- method: binarc
+  multi:
+  - name: msg/us/jm.bar
+  - name: msg/uk/jm.bar
+  name: msg/jp/jm.bar
+  package: kh2_fifth
+  source:
+  - method: kh2msg
+    name: jm
+    source:
+    - language: en
+      name: msg/Journal.yml
+    type: list
+
+
+#Model Replacements#
+
+#SORA
+- name: obj/ACTOR_SORA.mdlx
+  multi: 
+  - name: obj/AL14_PLAYER.mdlx
+  - name: obj/DEAD_BOSS.mdlx
+  - name: obj/LAST_ATTACKER.mdlx
+  - name: obj/LAST_GIMMICK.mdlx
+  - name: obj/LAST_HITMARK.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: DMX.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: DMXBaseProofs.texture
+
+- name: obj/P_EX100.mdlx
+  multi: 
+  - name: obj/P_EX100_BTLF.mdlx
+  - name: obj/P_EX100_KH1F.mdlx
+  - name: obj/P_EX100_MAGF.mdlx
+  - name: obj/P_EX100_TRIF.mdlx
+  - name: obj/P_EX100_ULTF.mdlx
+  - name: obj/P_EX100_HTLF.mdlx
+  - name: obj/P_EX100_HTLF_BTL.mdlx
+  - name: obj/P_EX100_NM.mdlx
+  - name: obj/P_EX100_NM_BTLF.mdlx
+  - name: obj/P_EX100_NM_HTLF.mdlx
+  - name: obj/P_EX100_NM_KH1F.mdlx
+  - name: obj/P_EX100_NM_MAGF.mdlx
+  - name: obj/P_EX100_NM_TRIF.mdlx
+  - name: obj/P_EX100_NM_ULTF.mdlx
+  - name: obj/P_EX100_TR.mdlx
+  - name: obj/P_EX100_TR_BTLF.mdlx
+  - name: obj/P_EX100_TR_HTLF.mdlx
+  - name: obj/P_EX100_TR_KH1F.mdlx
+  - name: obj/P_EX100_TR_MAGF.mdlx
+  - name: obj/P_EX100_TR_TRIF.mdlx
+  - name: obj/P_EX100_TR_ULTF.mdlx
+  - name: obj/P_EX100_WI.mdlx
+  - name: obj/P_EX100_WI_BTLF.mdlx
+  - name: obj/P_EX100_WI_HTLF.mdlx
+  - name: obj/P_EX100_WI_KH1F.mdlx
+  - name: obj/P_EX100_WI_MAGF.mdlx
+  - name: obj/P_EX100_WI_TRIF.mdlx
+  - name: obj/P_EX100_WI_ULTF.mdlx
+  - name: obj/P_EX100_XM.mdlx
+  - name: obj/P_EX100_XM_BTLF.mdlx
+  - name: obj/P_EX100_XM_HTLF.mdlx
+  - name: obj/P_EX100_XM_KH1F.mdlx
+  - name: obj/P_EX100_XM_MAGF.mdlx
+  - name: obj/P_EX100_XM_TRIF.mdlx
+  - name: obj/P_EX100_XM_ULTF.mdlx
+  - name: obj/P_EX100_AL_CARPET.mdlx
+  - name: obj/P_EX100_TR_LIGHTCYCLE.mdlx
+  - name: obj/P_EX100_LAST.mdlx
+  - name: obj/P_EX100_MEMO.mdlx
+  - name: obj/P_EX100_NPC.mdlx
+  - name: obj/P_EX100_SIDECAR.mdlx
+  - name: obj/P_EX100_WM.mdlx
+  - name: obj/PLAYER.mdlx
+  - name: obj/PO06_PLAYER.mdlx
+  - name: obj/PO07_PLAYER.mdlx
+  - name: obj/PO08_PLAYER.mdlx
+  - name: obj/TR_PLAYER.mdlx
+  - name: obj/WM_EX100.mdlx
+  package: kh2_sixth
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMX.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXBaseProofs.texture
+
+#Sora in KH1 Clothes
+- name: obj/P_EX120.mdlx
+  multi: 
+  - name: obj/P_EX120_NPC_RED.mdlx
+  - name: obj/P_EX120_NPC_GREEN.mdlx
+  - name: obj/P_EX120_NPC_BLUE.mdlx
+  package: kh2_sixth
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXKH1.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/Base.tim
+
+
+
+#Lion Sora (now a Pitbull)
+- name: obj/P_LK100.mdlx
+  package: kh2_sixth
+  method: binarc
+  source:
+  - name: p_lk
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXPit.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXPit.texture
+
+
+
+#Mermaid Sora
+- name: obj/P_LM100.mdlx
+  package: kh2_sixth
+  method: binarc
+  source:
+  - name: p_lm
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXMermaid.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXMermaid.texture
+
+
+#HD Sora
+- name: obj/H_EX500.mdlx
+  multi: 
+  - name: obj/H_EX500_BTLF.mdlx
+  - name: obj/H_EX500_KH1F.mdlx
+  - name: obj/H_EX500_MAGF.mdlx
+  - name: obj/H_EX500_NM.mdlx
+  - name: obj/H_EX500_NM_BTLF.mdlx
+  - name: obj/H_EX500_NM_KH1F.mdlx
+  - name: obj/H_EX500_NM_MAGF.mdlx
+  - name: obj/H_EX500_NM_TRIF.mdlx
+  - name: obj/H_EX500_NM_ULTF.mdlx
+  - name: obj/H_EX500_TR.mdlx
+  - name: obj/H_EX500_TRIF.mdlx
+  - name: obj/H_EX500_TR_BTLF.mdlx
+  - name: obj/H_EX500_TR_KH1F.mdlx
+  - name: obj/H_EX500_TR_MAGF.mdlx
+  - name: obj/H_EX500_TR_TRIF.mdlx
+  - name: obj/H_EX500_TR_ULTF.mdlx
+  - name: obj/H_EX500_TR_UTLF.mdlx
+  - name: obj/H_EX500_ULTF.mdlx
+  - name: obj/H_EX500_XM.mdlx
+  - name: obj/H_EX500_XM_BTLF.mdlx
+  - name: obj/H_EX500_XM_KH1F.mdlx
+  - name: obj/H_EX500_XM_MAGF.mdlx
+  - name: obj/H_EX500_XM_TRIF.mdlx
+  - name: obj/H_EX500_XM_ULTF.mdlx
+  - name: obj/ACTOR_SORA_H.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXHD.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMX.texture
+
+
+#HD KH1 Clothing Sora
+- name: obj/H_EX790.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXKH1HD.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMX.texture
+
+
+#HD Mermaid Sora
+- name: obj/H_EX630.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXMermaidHD.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXMermaid.texture
+
+
+#HD Lion Sora (Now a Pitbull)
+- name: obj/H_EX640.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXPitHD.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXPit.texture
+
+
+###SORA TEXTURES###
+
+
+###Textures###
+#Normal Sora Textures#
+- name: remastered/obj/P_EX100.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NPC.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_AL_CARPET.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM/-0.dds
+  - name: remastered/obj/P_EX100_MEMO/-0.dds
+  - name: remastered/obj/_EX100_SIDECAR/-0.dds
+  - name: remastered/obj/P_EX100_WM.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_LAST/-0.dds
+  - name: remastered/obj/P_EX110_BTLF/-0.dds
+  - name: remastered/obj/P_EX120.mdlx/-0.dds
+  - name: remastered/obj/PO06_PLAYER.mdlx/-0.dds
+  - name: remastered/obj/PO07_PLAYER.mdlx/-0.dds
+  - name: remastered/obj/PO08_PLAYER.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0.dds
+
+
+- name: remastered/obj/P_EX100.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NPC.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_NM.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_AL_CARPET.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM/-1.dds
+  - name: remastered/obj/P_EX100_MEMO/-1.dds
+  - name: remastered/obj/_EX100_SIDECAR/-1.dds
+  - name: remastered/obj/P_EX100_WM.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_LAST/-1.dds
+  - name: remastered/obj/P_EX110_BTLF/-1.dds
+  - name: remastered/obj/P_EX120.mdlx/-1.dds
+  - name: remastered/obj/PO06_PLAYER.mdlx/-1.dds
+  - name: remastered/obj/PO07_PLAYER.mdlx/-1.dds
+  - name: remastered/obj/PO08_PLAYER.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1.dds
+
+
+
+#Textures for Fairy Fight#
+#Red
+- name: remastered/obj/P_EX120_NPC_RED.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Red.dds
+#Green
+- name: remastered/obj/P_EX120_NPC_GREEN.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Green.dds
+#Blue
+- name: remastered/obj/P_EX120_NPC_BLUE.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Blue.dds
+
+
+#Valor Form Model Textures#
+- name: remastered/obj/P_EX100_BTLF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_BTLF.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Valor.dds
+
+- name: remastered/obj/P_EX100_BTLF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_BTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_BTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_BTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_BTLF.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1Valor.dds
+
+
+#Wisdom Form Model Textures#
+- name: remastered/obj/P_EX100_MAGF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Wisdom.dds
+
+- name: remastered/obj/P_EX100_MAGF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_MAGF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1Wisdom.dds
+
+#Master Form Model Textures#
+- name: remastered/obj/P_EX100_TRIF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Master.dds
+
+- name: remastered/obj/P_EX100_TRIF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_TRIF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1Master.dds
+
+
+#Limit Form Model Textures#
+- name: remastered/obj/P_EX100_KH1F.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Limit.dds
+
+- name: remastered/obj/P_EX100_KH1F.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_KH1F.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1Limit.dds
+
+
+#Final Form Model Textures#
+- name: remastered/obj/P_EX100_ULTF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Final.dds
+
+- name: remastered/obj/P_EX100_ULTF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_ULTF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1Final.dds
+
+
+#Anti Form Model Textures#
+- name: remastered/obj/P_EX100_HTLF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_HTLF_BTL.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Anti.dds
+
+- name: remastered/obj/P_EX100_HTLF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_HTLF_BTL.mdlx/-1.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-1Anti.dds
+
+
+#Atlantica Model Textures
+- name: remastered/obj/P_LM100.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0.dds
+- name: remastered/obj/P_LM100.mdlx/-4.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-4DMX.dds
+
+
+#Pride Lands Model Textures
+- name: remastered/obj/P_LK100.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Pit.dds
+
+
+###HIGH POLY MODEL TEXTURES###
+#High Poly Sora Textures#
+- name: remastered/obj/H_EX500.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX500_NM.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM.mdlx/-0.dds
+  - name: remastered/obj/H_ZZ010.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0.dds
+
+
+#High Poly Valor Form Model Textures#
+- name: remastered/obj/H_EX500_BTLF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX500_NM_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_BTLF.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0Valor.dds
+
+
+#High Poly Wisdom Form Model Textures#
+- name: remastered/obj/H_EX500_MAGF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX500_NM_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_MAGF.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0Wisdom.dds
+
+
+#High Poly Master Form Model Textures#
+- name: remastered/obj/H_EX500_TRIF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX500_NM_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_TRIF.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0Master.dds
+
+
+#High Poly Limit Form Model Textures#
+- name: remastered/obj/H_EX500_KH1F.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX500_NM_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_KH1F.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0Limit.dds
+
+
+#High Poly Final Form Model Textures#
+- name: remastered/obj/H_EX500_ULTF.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX500_NM_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_ULTF.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0Final.dds
+
+
+#High Poly Sora KH1 Clothes Model Textures#
+- name: remastered/obj/H_EX790.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0.dds
+
+
+#High Poly Atlantica Model Textures#
+- name: remastered/obj/H_EX630.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-0.dds
+- name: remastered/obj/H_EX630.mdlx/-2.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/-4DMX.dds
+
+
+#High Poly Pride Lands Model Textures#
+- name: remastered/obj/H_EX640.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Pit.dds
+
+
+
+
+###Roxas###
+#Roxas Model#
+- name: obj/P_EX110.mdlx
+  multi: 
+  - name: obj/P_EX110_NPC_PAJAMAS.mdlx
+  package: kh2_first
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXRoxas.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMX.texture
+
+- name: obj/P_EX110_BTLF.mdlx
+  package: kh2_sixth
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXRoxas.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMX.texture
+
+
+#HD Roxas Models
+- name: obj/H_EX510.mdlx
+  multi: 
+  - name: obj/H_EX510_PAJAMAS.mdlx
+  package: kh2_first
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXRoxasHD.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMX.texture
+
+
+#Roxas Textures Main#
+- name: remastered/obj/P_EX110.mdlx/-0.dds
+  multi: 
+  - name: remastered/obj/P_EX110_NPC_PAJAMAS.mdlx/-0.dds
+  - name: remastered/obj/P_EX110_BTLF.mdlx/-0.dds
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/-0.dds
+
+- name: remastered/obj/P_EX110_BTLF.mdlx/-0.dds
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/-0.dds
+
+
+###Shadow Roxas Texture###
+- name: remastered/obj/P_EX130.mdlx/-0.dds
+  package: kh2_sixth
+  method: copy
+  source:
+  - name: Textures/-0Anti.dds
+
+
+#Room Transitions Twilight Town#
+- name: remastered/field2d/fr/tt0field.2dd/FR_tt0field_2dd2.png
+  multi: 
+  - name: remastered/field2d/gr/tt0field.2dd/GR_tt0field_2dd2.png
+  - name: remastered/field2d/it/tt0field.2dd/IT_tt0field_2dd2.png
+  - name: remastered/field2d/jp/tt0field.2dd/JP_tt0field_2dd2.png
+  - name: remastered/field2d/sp/tt0field.2dd/SP_tt0field_2dd2.png
+  - name: remastered/field2d/us/tt0field.2dd/US_tt0field_2dd2.png
+  package: kh2_first
+  method: copy
+  source:
+  - name: Huds/X.png
+
+
+#Room Transitions - Everything Else#
+- name: remastered/field2d/fr/al0field.2dd/FR_al0field_2dd2.png
+  multi: 
+  - name: remastered/field2d/fr/bb0field.2dd/FR_bb0field_2dd2.png
+  - name: remastered/field2d/fr/ca0field.2dd/FR_ca0field_2dd2.png
+  - name: remastered/field2d/fr/dc0field.2dd/FR_dc0field_2dd2.png
+  - name: remastered/field2d/fr/di0field.2dd/FR_di0field_2dd2.png
+  - name: remastered/field2d/fr/eh0field.2dd/FR_eh0field_2dd2.png
+  - name: remastered/field2d/fr/hb0field.2dd/FR_hb0field_2dd2.png
+  - name: remastered/field2d/fr/he0field.2dd/FR_he0field_2dd2.png
+  - name: remastered/field2d/fr/lk0field.2dd/FR_lk0field_2dd2.png
+  - name: remastered/field2d/fr/lm0field.2dd/FR_lm0field_2dd2.png
+  - name: remastered/field2d/fr/mu0field.2dd/FR_mu0field_2dd2.png
+  - name: remastered/field2d/fr/nm0field.2dd/FR_nm0field_2dd2.png
+  - name: remastered/field2d/fr/po0field.2dd/FR_po0field_2dd2.png
+  - name: remastered/field2d/fr/tr0field.2dd/FR_tr0field_2dd2.png
+  - name: remastered/field2d/fr/wi0field.2dd/FR_wi0field_2dd2.png
+  - name: remastered/field2d/fr/wm0field.2dd/FR_wm0field_2dd2.png
+  - name: remastered/field2d/fr/zz0field.2dd/FR_zz0field_2dd2.png
+  - name: remastered/field2d/gr/al0field.2dd/GR_al0field_2dd2.png
+  - name: remastered/field2d/gr/bb0field.2dd/GR_bb0field_2dd2.png
+  - name: remastered/field2d/gr/ca0field.2dd/GR_ca0field_2dd2.png
+  - name: remastered/field2d/gr/dc0field.2dd/GR_dc0field_2dd2.png
+  - name: remastered/field2d/gr/di0field.2dd/GR_di0field_2dd2.png
+  - name: remastered/field2d/gr/eh0field.2dd/GR_eh0field_2dd2.png
+  - name: remastered/field2d/gr/hb0field.2dd/GR_hb0field_2dd2.png
+  - name: remastered/field2d/gr/he0field.2dd/GR_he0field_2dd2.png
+  - name: remastered/field2d/gr/lk0field.2dd/GR_lk0field_2dd2.png
+  - name: remastered/field2d/gr/lm0field.2dd/GR_lm0field_2dd2.png
+  - name: remastered/field2d/gr/mu0field.2dd/GR_mu0field_2dd2.png
+  - name: remastered/field2d/gr/nm0field.2dd/GR_nm0field_2dd2.png
+  - name: remastered/field2d/gr/po0field.2dd/GR_po0field_2dd2.png
+  - name: remastered/field2d/gr/tr0field.2dd/GR_tr0field_2dd2.png
+  - name: remastered/field2d/gr/wi0field.2dd/GR_wi0field_2dd2.png
+  - name: remastered/field2d/gr/wm0field.2dd/GR_wm0field_2dd2.png
+  - name: remastered/field2d/gr/zz0field.2dd/GR_zz0field_2dd2.png
+  - name: remastered/field2d/it/al0field.2dd/IT_al0field_2dd2.png
+  - name: remastered/field2d/it/bb0field.2dd/IT_bb0field_2dd2.png
+  - name: remastered/field2d/it/ca0field.2dd/IT_ca0field_2dd2.png
+  - name: remastered/field2d/it/dc0field.2dd/IT_dc0field_2dd2.png
+  - name: remastered/field2d/it/di0field.2dd/IT_di0field_2dd2.png
+  - name: remastered/field2d/it/eh0field.2dd/IT_eh0field_2dd2.png
+  - name: remastered/field2d/it/hb0field.2dd/IT_hb0field_2dd2.png
+  - name: remastered/field2d/it/he0field.2dd/IT_he0field_2dd2.png
+  - name: remastered/field2d/it/lk0field.2dd/IT_lk0field_2dd2.png
+  - name: remastered/field2d/it/lm0field.2dd/IT_lm0field_2dd2.png
+  - name: remastered/field2d/it/mu0field.2dd/IT_mu0field_2dd2.png
+  - name: remastered/field2d/it/nm0field.2dd/IT_nm0field_2dd2.png
+  - name: remastered/field2d/it/po0field.2dd/IT_po0field_2dd2.png
+  - name: remastered/field2d/it/tr0field.2dd/IT_tr0field_2dd2.png
+  - name: remastered/field2d/it/wi0field.2dd/IT_wi0field_2dd2.png
+  - name: remastered/field2d/it/wm0field.2dd/IT_wm0field_2dd2.png
+  - name: remastered/field2d/it/zz0field.2dd/IT_zz0field_2dd2.png
+  - name: remastered/field2d/jp/al0field.2dd/JP_al0field_2dd2.png
+  - name: remastered/field2d/jp/bb0field.2dd/JP_bb0field_2dd2.png
+  - name: remastered/field2d/jp/ca0field.2dd/JP_ca0field_2dd2.png
+  - name: remastered/field2d/jp/dc0field.2dd/JP_dc0field_2dd2.png
+  - name: remastered/field2d/jp/di0field.2dd/JP_di0field_2dd2.png
+  - name: remastered/field2d/jp/eh0field.2dd/JP_eh0field_2dd2.png
+  - name: remastered/field2d/jp/hb0field.2dd/JP_hb0field_2dd2.png
+  - name: remastered/field2d/jp/he0field.2dd/JP_he0field_2dd2.png
+  - name: remastered/field2d/jp/lk0field.2dd/JP_lk0field_2dd2.png
+  - name: remastered/field2d/jp/lm0field.2dd/JP_lm0field_2dd2.png
+  - name: remastered/field2d/jp/mu0field.2dd/JP_mu0field_2dd2.png
+  - name: remastered/field2d/jp/nm0field.2dd/JP_nm0field_2dd2.png
+  - name: remastered/field2d/jp/po0field.2dd/JP_po0field_2dd2.png
+  - name: remastered/field2d/jp/tr0field.2dd/JP_tr0field_2dd2.png
+  - name: remastered/field2d/jp/wi0field.2dd/JP_wi0field_2dd2.png
+  - name: remastered/field2d/jp/wm0field.2dd/JP_wm0field_2dd2.png
+  - name: remastered/field2d/jp/zz0field.2dd/JP_zz0field_2dd2.png
+  - name: remastered/field2d/sp/al0field.2dd/SP_al0field_2dd2.png
+  - name: remastered/field2d/sp/bb0field.2dd/SP_bb0field_2dd2.png
+  - name: remastered/field2d/sp/ca0field.2dd/SP_ca0field_2dd2.png
+  - name: remastered/field2d/sp/dc0field.2dd/SP_dc0field_2dd2.png
+  - name: remastered/field2d/sp/di0field.2dd/SP_di0field_2dd2.png
+  - name: remastered/field2d/sp/eh0field.2dd/SP_eh0field_2dd2.png
+  - name: remastered/field2d/sp/hb0field.2dd/SP_hb0field_2dd2.png
+  - name: remastered/field2d/sp/he0field.2dd/SP_he0field_2dd2.png
+  - name: remastered/field2d/sp/lk0field.2dd/SP_lk0field_2dd2.png
+  - name: remastered/field2d/sp/lm0field.2dd/SP_lm0field_2dd2.png
+  - name: remastered/field2d/sp/mu0field.2dd/SP_mu0field_2dd2.png
+  - name: remastered/field2d/sp/nm0field.2dd/SP_nm0field_2dd2.png
+  - name: remastered/field2d/sp/po0field.2dd/SP_po0field_2dd2.png
+  - name: remastered/field2d/sp/tr0field.2dd/SP_tr0field_2dd2.png
+  - name: remastered/field2d/sp/wi0field.2dd/SP_wi0field_2dd2.png
+  - name: remastered/field2d/sp/wm0field.2dd/SP_wm0field_2dd2.png
+  - name: remastered/field2d/sp/zz0field.2dd/SP_zz0field_2dd2.png
+  - name: remastered/field2d/us/al0field.2dd/US_al0field_2dd2.png
+  - name: remastered/field2d/us/bb0field.2dd/US_bb0field_2dd2.png
+  - name: remastered/field2d/us/ca0field.2dd/US_ca0field_2dd2.png
+  - name: remastered/field2d/us/dc0field.2dd/US_dc0field_2dd2.png
+  - name: remastered/field2d/us/di0field.2dd/US_di0field_2dd2.png
+  - name: remastered/field2d/us/eh0field.2dd/US_eh0field_2dd2.png
+  - name: remastered/field2d/us/hb0field.2dd/US_hb0field_2dd2.png
+  - name: remastered/field2d/us/he0field.2dd/US_he0field_2dd2.png
+  - name: remastered/field2d/us/lk0field.2dd/US_lk0field_2dd2.png
+  - name: remastered/field2d/us/lm0field.2dd/US_lm0field_2dd2.png
+  - name: remastered/field2d/us/mu0field.2dd/US_mu0field_2dd2.png
+  - name: remastered/field2d/us/nm0field.2dd/US_nm0field_2dd2.png
+  - name: remastered/field2d/us/po0field.2dd/US_po0field_2dd2.png
+  - name: remastered/field2d/us/tr0field.2dd/US_tr0field_2dd2.png
+  - name: remastered/field2d/us/wi0field.2dd/US_wi0field_2dd2.png
+  - name: remastered/field2d/us/wm0field.2dd/US_wm0field_2dd2.png
+  - name: remastered/field2d/us/zz0field.2dd/US_zz0field_2dd2.png
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Huds/X.png
+
+
+
+
+###Hud Icons###
+#Hud - .png#
+- name: remastered/obj/P_EX100_SIDECAR.a.us/-8.png
+  multi:
+  - name: remastered/obj/P_EX100_SIDECAR.a.fr/-8.png
+  - name: remastered/obj/P_EX100_SIDECAR.a.gr/-8.png
+  - name: remastered/obj/P_EX100_SIDECAR.a.it/-8.png
+  - name: remastered/obj/P_EX100_SIDECAR.a.sp/-8.png
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.a.fr/-8.png
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.a.gr/-8.png
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.a.it/-8.png
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.a.sp/-8.png
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.a.us/-8.png
+  - name: remastered/obj/PO07_PLAYER.a.fr/-0.png
+  - name: remastered/obj/PO07_PLAYER.a.gr/-0.png
+  - name: remastered/obj/PO07_PLAYER.a.it/-0.png
+  - name: remastered/obj/PO07_PLAYER.a.sp/-0.png
+  - name: remastered/obj/PO07_PLAYER.a.us/-0.png
+  - name: remastered/obj/PO08_PLAYER.a.fr/-0.png
+  - name: remastered/obj/PO08_PLAYER.a.gr/-0.png
+  - name: remastered/obj/PO08_PLAYER.a.it/-0.png
+  - name: remastered/obj/PO08_PLAYER.a.sp/-0.png
+  - name: remastered/obj/PO08_PLAYER.a.us/-0.png
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/XHud.png
+
+
+#Hud - .dds#
+- name: remastered/obj/P_EX100.a.us/-8.dds
+  multi:
+  - name: remastered/obj/AL14_PLAYER.a.us/-8.dds
+  - name: remastered/obj/AL14_PLAYER.a.us/-8.dds
+  - name: remastered/obj/P_EX100_AL_CARPET.a.us/-8.dds
+  - name: remastered/obj/P_EX100_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX100_NM.a.us/-8.dds
+  - name: remastered/obj/P_EX100_NM_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_NM_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_NM_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_NM_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_NM_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_NM_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX110.a.us/-0.dds
+  - name: remastered/obj/P_EX110_BTLF.a.us/-0.dds
+  - name: remastered/obj/P_EX120.a.us/-0.dds
+  - name: remastered/obj/P_EX110_BTLF.a.us/-8.dds
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/XHud.dds
+
+
+#HUD - Space Paranoids#
+- name: remastered/obj/P_EX100_TR.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_TR_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.a.us/-3.dds
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/XHudTR.dds
+
+
+#HUD - Timeless River#
+- name: remastered/obj/P_EX100_WI.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_WI_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.a.us/-3.dds
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/XHudWI.dds
+
+
+
+#Hud - Christmas Town XM#
+- name: remastered/obj/P_EX100_XM.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_XM_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.a.us/-10.dds
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/XHudXM.dds
+
+#Hud - Pride Lands
+- name: remastered/obj/P_LK100.a.us/-5.dds
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/PitHud.dds
+
+
+#Shopface
+- name: remastered/menu/shopface/p_ex100.bin/-0.dds
+  multi:
+  - name: remastered/menu/shopface/p_ex100_10.bin/-0.dds #NM
+  - name: remastered/menu/shopface/p_ex100_20.bin/-0.dds #TR
+  - name: remastered/menu/shopface/p_ex100_30.bin/-0.dds #WI
+  - name: remastered/menu/shopface/p_xm100.bin/-0.dds #XM
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/DMXHud.dds
+
+#Shopface Pride Lands
+- name: remastered/menu/shopface/p_lk100.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/DMXHud.dds
+
+
+###Journal Pictures###
+- name: remastered/menu/jmface_al.2ld/-0.dds
+  multi:
+  - name: remastered/menu/jmface_al0.imd/-0.dds
+  - name: remastered/menu/jmface_bb.2ld/-0.dds
+  - name: remastered/menu/jmface_bb0.imd/-0.dds
+  - name: remastered/menu/jmface_ca.2ld/-0.dds
+  - name: remastered/menu/jmface_ca0.imd/-0.dds
+  - name: remastered/menu/jmface_dc.2ld/-0.dds
+  - name: remastered/menu/jmface_dc0.imd/-0.dds
+  - name: remastered/menu/jmface_eh.2ld/-0.dds
+  - name: remastered/menu/jmface_eh0.imd/-0.dds
+  - name: remastered/menu/jmface_ex.2ld/-0.dds
+  - name: remastered/menu/jmface_ex.2ld/-1.dds
+  - name: remastered/menu/jmface_ex0.imd/-0.dds
+  - name: remastered/menu/jmface_ex1.imd/-0.dds
+  - name: remastered/menu/jmface_hb.2ld/-0.dds
+  - name: remastered/menu/jmface_hb0.imd/-0.dds
+  - name: remastered/menu/jmface_he.2ld/-0.dds
+  - name: remastered/menu/jmface_he0.imd/-0.dds
+  - name: remastered/menu/jmface_lm.2ld/-0.dds
+  - name: remastered/menu/jmface_lm0.imd/-0.dds
+  - name: remastered/menu/jmface_mu.2ld/-0.dds
+  - name: remastered/menu/jmface_mu0.imd/-0.dds
+  - name: remastered/menu/jmface_nm.2ld/-0.dds
+  - name: remastered/menu/jmface_nm0.imd/-0.dds
+  - name: remastered/menu/jmface_po.2ld/-0.dds
+  - name: remastered/menu/jmface_po0.imd/-0.dds
+  - name: remastered/menu/jmface_tr.2ld/-0.dds
+  - name: remastered/menu/jmface_tr0.imd/-0.dds
+  - name: remastered/menu/jmface_tt.2ld/-0.dds
+  - name: remastered/menu/jmface_tt.2ld/-1.dds
+  - name: remastered/menu/jmface_tt.2ld/-4.dds
+  - name: remastered/menu/jmface_tt0.imd/-0.dds
+  - name: remastered/menu/jmface_tt1.imd/-0.dds
+  - name: remastered/menu/jmface_tt4.imd/-0.dds
+  - name: remastered/menu/jmface_wi.2ld/-0.dds
+  - name: remastered/menu/jmface_wi0.imd/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/DMXHud.dds
+
+#Journal Picture - Pride Lands
+- name: remastered/menu/jmface_lk.2ld/-0.dds
+  multi:
+  - name: remastered/menu/jmface_lk0.imd/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Huds/Pit.dds
+
+
+###Title Screen###
+
+- name: menu/us/title.2ld
+  multi:
+  - name: menu/fr/title.2ld
+  - name: menu/gr/title.2ld
+  - name: menu/it/title.2ld
+  - name: menu/sp/title.2ld
+  - name: menu/uk/title.2ld
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXtitle.2ld
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld0.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld0.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld0.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld0.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld0.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld0.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle0.png
+
+- name: remastered/menu/us/title.2ld/US_title_2ld1.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld1.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld1.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld1.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld1.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld1.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle1.png
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld2.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld2.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld2.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld2.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld2.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld2.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle2.png
+
+- name: remastered/menu/us/title.2ld/US_title_2ld4.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld4.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld4.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld4.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld4.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld4.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle4.png
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld3.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld3.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld3.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld3.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld3.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld3.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle3.png
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld5.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld5.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld5.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld5.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld5.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld5.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle5.png
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld6.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld6.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld6.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld6.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld6.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld6.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle6.png
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld7.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld7.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld7.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld7.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld7.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld7.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle7.png
+
+
+- name: remastered/menu/us/title.2ld/US_title_2ld8.png
+  multi:
+  - name: remastered/menu/fr/title.2ld/FR_title_2ld8.png
+  - name: remastered/menu/gr/title.2ld/GR_title_2ld8.png
+  - name: remastered/menu/it/title.2ld/IT_title_2ld8.png
+  - name: remastered/menu/sp/title.2ld/SP_title_2ld8.png
+  - name: remastered/menu/uk/title.2ld/UK_title_2ld8.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXTitle8.png
+
+
+
+###MUSIC REPLACEMENT###
+
+#Dearly Beloved - Replaced by Intro
+- name: vagstream/Title.win32.scd
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Intro.scd
+
+
+#Fragments of Sorrow - Replaced by Stop Being Greedy
+- name: bgm/music051.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Stop Being Greedy.scd
+
+
+
+#A Fight to the Death - Replaced by Party Up (In Here)
+- name: bgm/music059.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Party Up (In Here).scd
+
+
+
+#Darkness of the Unknown (Part 1) - Replaced by The Rain
+- name: bgm/music060.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/The Rain.scd
+
+
+
+#Darkness of the Unknown (Part 2) - Replaced by Party Up (In Here)
+- name: bgm/music061.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Party Up (In Here).scd
+
+
+
+#Darkness of the Unknown (Part 3) - Replaced by What These Bitches Want
+- name: bgm/music062.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/What These Bitches Want.scd
+
+
+
+#The 13th Reflection - Replaced by Ruff Ryders Anthem
+- name: bgm/music063.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Ruff Ryders Anthem.scd
+
+
+
+#What A Surprise?! - Replaced by Rudolph the Red Nosed Reindeer (audio)
+- name: bgm/music064.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Rudolph The Red Nosed Reindeer (Audio).scd
+
+
+
+#Happy Holidays! - Replaced by Rudolph the Red Nosed Reindeer (instrumental)
+- name: bgm/music065.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Rudolph The Red Nosed Reindeer (Instrumental) Battle Edit.scd
+
+
+#The Other Promise - Replaced by Slippin'
+- name: bgm/music066.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Slippin'.scd
+
+
+
+#Rage Awakened - Replaced by Blackout
+- name: bgm/music067.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Blackout.scd
+
+
+
+#Disappeared - Replaced by Ruff Ryders Anthem
+- name: bgm/music087.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Ruff Ryders Anthem.scd
+
+
+
+#The Encounter - Replaced by Who We Be
+- name: bgm/music110.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Who We Be.scd
+
+
+
+#Sinister Shadows - Replaced by X Gon' Give It To Ya
+- name: bgm/music111.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/X Gon' Give It To Ya.scd
+
+
+
+#Tension Rising - Replaced by No Love 4 Me
+- name: bgm/music114.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/No Love 4 Me.scd
+
+
+
+#The Corrupted - Replaced by What's My Name
+- name: bgm/music115.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/What's My Name.scd
+
+
+
+#Rowdy Rumble - Replaced by We Right Here
+- name: bgm/music117.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/We Right Here.scd
+
+
+
+#Sinister Sundown - Replaced by Get It On The Floor
+- name: bgm/music119.win32.scd
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Get It On The Floor.scd
+
+
+
+#Desire for All That is Lost - Replaced by Fuckin wit D
+- name: bgm/music121.win32.scd
+  multi:
+  - name: bgm/music521.win32.scd #(Timeless River version)
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Fuckin wit D.scd
+
+
+
+#Dance to the Death - Replaced by Where The Hood At
+- name: bgm/music131.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Where The Hood At.scd
+
+
+
+#Vim and Vigor - Replaced by Get At Me Dog
+- name: bgm/music145.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Get At Me Dog.scd
+
+
+
+#The 13th Struggle - Replaced by Ruff Ryders Anthem
+- name: bgm/music151.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Ruff Ryders Anthem.scd
+
+
+
+#The 13th Dilemma - Replaced by Ruff Ryders Anthem
+- name: bgm/music185.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Ruff Ryders Anthem.scd
+
+
+
+#One-Winged Angel - Replaced by Grand Finale
+- name: bgm/music188.win32.scd
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/Grand Finale.scd
+
+
+
+#Dearly Beloved Reprise - Replaced by How's It Goin' Down
+- name: vagstream/End_Piano.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Music/How's It Goin' Down.scd
+
+
+###Battle Quote Replacements
+
+#Agrabah Battle Quotes
+- name: voice/us/battle/al0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Agrabah.scd
+
+#Beast's Castle Battle Quotes
+- name: voice/us/battle/bb0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/BeastsCastle.scd
+
+#Port Royal Battle Quotes
+- name: voice/us/battle/ca0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Pirates.scd
+
+#Disney Castle Battle Quotes
+- name: voice/us/battle/dc0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Disney.scd
+
+#The World That Never Was Battle Quotes
+- name: voice/us/battle/eh0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/TWTNW.scd
+
+#The World That Never Was Battle Quotes
+- name: voice/us/battle/eh0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/TWTNW.scd
+
+#Hollow Bastion Battle Quotes
+- name: voice/us/battle/hb0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/HollowBastion.scd
+
+#Olympus Coliseum Battle Quotes
+- name: voice/us/battle/he0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Hercules.scd
+
+#Olympus Coliseum Battle Quotes
+- name: voice/us/battle/he0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Hercules.scd
+
+#Pride Lands Battle Quotes
+- name: voice/us/battle/lk0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/LionKing.scd
+
+#Atlantica Battle Quotes
+- name: voice/us/battle/lm0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/LittleMermaid.scd
+
+#Land of Dragons Battle Quotes
+- name: voice/us/battle/mu0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Mulan.scd
+
+#Halloween Town Battle Quotes
+- name: voice/us/battle/nm0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Nightmare.scd
+
+#100 Acre Wood Battle Quotes
+- name: voice/us/battle/po0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Pooh.scd
+
+#Space Paranoids Battle Quotes
+- name: voice/us/battle/tr0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Tron.scd
+
+#Twilight Town (Sora) Quotes
+- name: voice/us/battle/tt0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/TTSora.scd
+
+#Twilight Town (Roxas) Quotes
+- name: voice/us/battle/tt0_roxas.win32.scd
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/TTRoxas.scd
+
+#Timeless River Quotes
+- name: voice/us/battle/wi0_sora.win32.scd
+  package: kh2_sixth
+  platform: pc
+  method: copy
+  source:
+  - name: Voice/Willie.scd
+
+
+###Ending Screen###
+- name: remastered/menu/us/ending.2ld/US_ending_2ld2.png
+  multi:
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld5.png
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld6.png
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld7.png
+  - name: remastered/menu/fr/ending.2ld/US_ending_2ld2.png
+  - name: remastered/menu/fr/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/fr/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/fr/ending.2ld/US_ending_2ld5.png
+  - name: remastered/menu/fr/ending.2ld/US_ending_2ld6.png
+  - name: remastered/menu/fr/ending.2ld/US_ending_2ld7.png
+  - name: remastered/menu/gr/ending.2ld/US_ending_2ld2.png
+  - name: remastered/menu/gr/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/gr/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/gr/ending.2ld/US_ending_2ld5.png
+  - name: remastered/menu/gr/ending.2ld/US_ending_2ld6.png
+  - name: remastered/menu/gr/ending.2ld/US_ending_2ld7.png
+  - name: remastered/menu/it/ending.2ld/US_ending_2ld2.png
+  - name: remastered/menu/it/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/it/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/it/ending.2ld/US_ending_2ld5.png
+  - name: remastered/menu/it/ending.2ld/US_ending_2ld6.png
+  - name: remastered/menu/it/ending.2ld/US_ending_2ld7.png
+  - name: remastered/menu/sp/ending.2ld/US_ending_2ld2.png
+  - name: remastered/menu/sp/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/sp/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/sp/ending.2ld/US_ending_2ld5.png
+  - name: remastered/menu/sp/ending.2ld/US_ending_2ld6.png
+  - name: remastered/menu/sp/ending.2ld/US_ending_2ld7.png
+  - name: remastered/menu/uk/ending.2ld/US_ending_2ld2.png
+  - name: remastered/menu/uk/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/uk/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/uk/ending.2ld/US_ending_2ld5.png
+  - name: remastered/menu/uk/ending.2ld/US_ending_2ld6.png
+  - name: remastered/menu/uk/ending.2ld/US_ending_2ld7.png
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Title/DMXEndScreen.png
+
+
+###Puzzles##
+
+#Duality
+- name: remastered/menu/jm_puzzle/puzzle010.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzle10.dds
+
+#Awakening
+- name: remastered/menu/jm_puzzle/puzzle020.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzle20.dds
+
+#Frontier
+- name: remastered/menu/jm_puzzle/puzzle030.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzle30.dds
+
+#Heart
+- name: remastered/menu/jm_puzzle/puzzle040.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzle40.dds
+
+#Sunset
+- name: remastered/menu/jm_puzzle/puzzle050.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzle50.dds
+
+#Daylight
+- name: remastered/menu/jm_puzzle/puzzle060.bin/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzle60.dds
+
+
+###Namine's Sketches###
+
+- name: remastered/map/tt18.map/-2.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Sketches/DMXAlbum2.dds
+
+- name: remastered/map/tt18.map/-7.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Sketches/DMXAlbum7.dds
+
+- name: remastered/map/tt18.map/-8.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Sketches/DMXAlbum8.dds
+
+- name: remastered/map/tt18.map/-9.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Sketches/DMXAlbum9.dds
+
+- name: remastered/map/tt18.map/-10.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Sketches/DMXAlbum10.dds
+
+- name: remastered/map/tt18.map/-18.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Sketches/DMXAlbum18.dds
