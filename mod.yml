@@ -643,6 +643,7 @@ assets:
     source:
     - name: Models/DMX.texture
 
+#Duel Wield Roxas#
 - name: obj/P_EX110_BTLF.mdlx
   package: kh2_sixth
   method: binarc
@@ -657,6 +658,22 @@ assets:
     method: copy
     source:
     - name: Models/DMX.texture
+
+#Shadow Roxas#
+- name: obj/P_EX130.mdlx
+  package: kh2_sixth
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXShadowRoxas.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXShadowRoxas.texture
 
 
 #HD Roxas Models
