@@ -884,6 +884,7 @@ assets:
   - name: remastered/obj/P_EX110_BTLF.a.us/-0.dds
   - name: remastered/obj/P_EX120.a.us/-0.dds
   - name: remastered/obj/P_EX110_BTLF.a.us/-8.dds
+  - name: remastered/obj/P_LM100.a.us/-0.dds
   package: kh2_sixth
   platform: pc
   method: copy
