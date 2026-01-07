@@ -288,7 +288,7 @@ assets:
   - name: remastered/obj/P_EX100_WI.mdlx/-0.dds
   - name: remastered/obj/P_EX100_XM.mdlx/-0.dds
   - name: remastered/obj/P_EX100_MEMO/-0.dds
-  - name: remastered/obj/_EX100_SIDECAR/-0.dds
+  - name: remastered/obj/P_EX100_SIDECAR/-0.dds
   - name: remastered/obj/P_EX100_WM.mdlx/-0.dds
   - name: remastered/obj/P_EX100_LAST/-0.dds
   - name: remastered/obj/P_EX110_BTLF/-0.dds
@@ -1719,3 +1719,460 @@ assets:
   method: copy
   source:
   - name: Sketches/DMXAlbum18.dds
+
+
+###Dive to the Heart Stained Glass Replacements###
+#eh21 and tt34#
+#Station of Awakening#
+- name: remastered/map/eh21.map/-4.dds
+  multi:
+  - name: remastered/map/tt34.map/-4.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue161.dds
+
+- name: remastered/map/eh21.map/-3.dds
+  multi:
+  - name: remastered/map/tt34.map/-3.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue162.dds
+
+- name: remastered/map/eh21.map/-10.dds
+  multi:
+  - name: remastered/map/tt34.map/-10.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue163.dds
+
+- name: remastered/map/eh21.map/-17.dds
+  multi:
+  - name: remastered/map/tt34.map/-17.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue164.dds
+
+- name: remastered/map/eh21.map/-11.dds
+  multi:
+  - name: remastered/map/tt34.map/-11.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue165.dds
+
+- name: remastered/map/eh21.map/-5.dds
+  multi:
+  - name: remastered/map/tt34.map/-5.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue166.dds
+
+- name: remastered/map/eh21.map/-6.dds
+  multi:
+  - name: remastered/map/tt34.map/-6.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue167.dds
+
+- name: remastered/map/eh21.map/-16.dds
+  multi:
+  - name: remastered/map/tt34.map/-16.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue168.dds
+
+- name: remastered/map/eh21.map/-14.dds
+  multi:
+  - name: remastered/map/tt34.map/-14.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue169.dds
+
+- name: remastered/map/eh21.map/-7.dds
+  multi:
+  - name: remastered/map/tt34.map/-7.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1610.dds
+
+- name: remastered/map/eh21.map/-9.dds
+  multi:
+  - name: remastered/map/tt34.map/-9.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1611.dds
+
+- name: remastered/map/eh21.map/-12.dds
+  multi:
+  - name: remastered/map/tt34.map/-12.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1612.dds
+
+- name: remastered/map/eh21.map/-15.dds
+  multi:
+  - name: remastered/map/tt34.map/-15.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1613.dds
+
+- name: remastered/map/eh21.map/-8.dds
+  multi:
+  - name: remastered/map/tt34.map/-8.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1614.dds
+
+- name: remastered/map/eh21.map/-18.dds
+  multi:
+  - name: remastered/map/tt34.map/-18.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1615.dds
+
+- name: remastered/map/eh21.map/-13.dds
+  multi:
+  - name: remastered/map/tt34.map/-13.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue16/LightBlue1616.dds
+
+#tt32#
+#Station of Serenity#
+- name: remastered/map/eh21.map/-6.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue91.dds
+
+- name: remastered/map/eh21.map/-7.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue92.dds
+
+- name: remastered/map/eh21.map/-10.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue93.dds
+
+- name: remastered/map/eh21.map/-3.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue94.dds
+
+- name: remastered/map/eh21.map/-11.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue95.dds
+
+- name: remastered/map/eh21.map/-8.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue96.dds
+
+- name: remastered/map/eh21.map/-4.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue97.dds
+
+- name: remastered/map/eh21.map/-5.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue98.dds
+
+- name: remastered/map/eh21.map/-9.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/LightBlue9/LightBlue99.dds
+
+
+#tt33#
+#Station of Calling#
+#Green Platform#
+- name: remastered/map/tt33.map/-12.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green1.dds
+
+- name: remastered/map/tt33.map/-11.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green2.dds
+
+- name: remastered/map/tt33.map/-9.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green3.dds
+
+- name: remastered/map/tt33.map/-42.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green4.dds
+
+- name: remastered/map/tt33.map/-45.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green5.dds
+
+- name: remastered/map/tt33.map/-7.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green6.dds
+
+- name: remastered/map/tt33.map/-43.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green7.dds
+
+- name: remastered/map/tt33.map/-44.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green8.dds
+
+- name: remastered/map/tt33.map/-8.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Green9/Green9.dds
+
+#Red Platform#
+- name: remastered/map/tt33.map/-21.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red1.dds
+
+- name: remastered/map/tt33.map/-20.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red2.dds
+
+- name: remastered/map/tt33.map/-19.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red3.dds
+
+- name: remastered/map/tt33.map/-17.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red4.dds
+
+- name: remastered/map/tt33.map/-22.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red5.dds
+
+- name: remastered/map/tt33.map/-25.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red6.dds
+
+- name: remastered/map/tt33.map/-26.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red7.dds
+
+- name: remastered/map/tt33.map/-18.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red8.dds
+
+- name: remastered/map/tt33.map/-23.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red9.dds
+
+- name: remastered/map/tt33.map/-27.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red10.dds
+
+- name: remastered/map/tt33.map/-28.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red11.dds
+
+- name: remastered/map/tt33.map/-16.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red12.dds
+
+- name: remastered/map/tt33.map/-24.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red13.dds
+
+- name: remastered/map/tt33.map/-10.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red14.dds
+
+- name: remastered/map/tt33.map/-13.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red15.dds
+
+- name: remastered/map/tt33.map/-14.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/Red16/Red16.dds
+
+#Dark Blue Platform#
+- name: remastered/map/tt33.map/-35.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue1.dds
+
+- name: remastered/map/tt33.map/-36.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue2.dds
+
+- name: remastered/map/tt33.map/-38.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue3.dds
+
+- name: remastered/map/tt33.map/-32.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue4.dds
+
+- name: remastered/map/tt33.map/-40.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue5.dds
+
+- name: remastered/map/tt33.map/-39.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue6.dds
+
+- name: remastered/map/tt33.map/-33.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue7.dds
+
+- name: remastered/map/tt33.map/-34.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue8.dds
+
+- name: remastered/map/tt33.map/-37.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Glass/DarkBlue9/DarkBlue9.dds
