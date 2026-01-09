@@ -675,6 +675,67 @@ assets:
     source:
     - name: Models/DMXShadowRoxas.texture
 
+#Hooded Roxas#
+- name: obj/B_EX390.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: b_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXHoodedB_EX390.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXHoodedB_EX390.texture
+
+- name: obj/N_EX820_BTL.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: n_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXHoodedB_EX390.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXHoodedB_EX390.texture
+
+- name: obj/N_EX820.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: n_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXHoodedN_EX820.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXHoodedN_EX820.texture
+
+#Unhooded Roxas#
+- name: obj/N_EX830.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: n_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXUnhoodedN_EX830.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXUnhoodedN_EX830.texture
 
 #HD Roxas Models
 - name: obj/H_EX510.mdlx
@@ -693,6 +754,22 @@ assets:
     method: copy
     source:
     - name: Models/DMX.texture
+
+#HD Hooded Roxas#
+- name: obj/H_EX510.mdlx
+  package: kh2_fifth
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Models/DMXUnhoodedH_EX650.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Models/DMXUnhoodedH_EX650.texture
 
 
 #Roxas Textures Main#
@@ -720,6 +797,90 @@ assets:
   method: copy
   source:
   - name: Textures/-0Anti.dds
+
+#Hooded Roxas Textures#
+
+#Hooded Roxas Battle#
+- name: remastered/obj/B_EX390.mdlx/-0.dds
+  multi: 
+  - name: remastered/obj/N_EX820_BTL.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/DMXHood.dds
+
+- name: remastered/obj/B_EX390.mdlx/-1.dds
+  multi: 
+  - name: remastered/obj/N_EX820_BTL.mdlx/-1.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Chains.dds
+
+- name: remastered/obj/B_EX390.mdlx/-2.dds
+  multi: 
+  - name: remastered/obj/N_EX820_BTL.mdlx/-2.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Clothes.dds
+
+- name: remastered/obj/B_EX390.mdlx/-3.dds
+  multi: 
+  - name: remastered/obj/N_EX820_BTL.mdlx/-3.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Oathkeeper.dds
+
+- name: remastered/obj/B_EX390.mdlx/-4.dds
+  multi: 
+  - name: remastered/obj/N_EX820_BTL.mdlx/-4.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Oblivion.dds
+
+#Hooded Roxas Cutscene?#
+- name: remastered/obj/N_EX820.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/DMXHood.dds
+
+- name: remastered/obj/N_EX820.mdlx/-1.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Chains.dds
+
+- name: remastered/obj/N_EX820.mdlx/-2.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Clothes.dds
+
+
+#Unhooded Roxas Textures#
+#Normal Unhooded Roxas#
+- name: remastered/obj/N_EX830.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/DMXClothes.dds
+
+#HD Unhooded Roxas#
+- name: remastered/obj/H_EX650.mdlx/-0.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/DMXChains.dds
+
+- name: remastered/obj/H_EX650.mdlx/-1.dds
+  package: kh2_fifth
+  method: copy
+  source:
+  - name: Textures/Clothes3.dds
 
 
 #Room Transitions Twilight Town#
