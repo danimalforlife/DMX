@@ -755,8 +755,8 @@ assets:
     source:
     - name: Models/DMX.texture
 
-#HD Hooded Roxas#
-- name: obj/H_EX510.mdlx
+#HD Unhooded Roxas#
+- name: obj/H_EX650.mdlx
   package: kh2_fifth
   method: binarc
   source:
@@ -2031,63 +2031,63 @@ assets:
 
 #tt32#
 #Station of Serenity#
-- name: remastered/map/eh21.map/-6.dds
+- name: remastered/map/tt32.map/-6.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue91.dds
 
-- name: remastered/map/eh21.map/-7.dds
+- name: remastered/map/tt32.map/-7.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue92.dds
 
-- name: remastered/map/eh21.map/-10.dds
+- name: remastered/map/tt32.map/-10.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue93.dds
 
-- name: remastered/map/eh21.map/-3.dds
+- name: remastered/map/tt32.map/-3.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue94.dds
 
-- name: remastered/map/eh21.map/-11.dds
+- name: remastered/map/tt32.map/-11.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue95.dds
 
-- name: remastered/map/eh21.map/-8.dds
+- name: remastered/map/tt32.map/-8.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue96.dds
 
-- name: remastered/map/eh21.map/-4.dds
+- name: remastered/map/tt32.map/-4.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue97.dds
 
-- name: remastered/map/eh21.map/-5.dds
+- name: remastered/map/tt32.map/-5.dds
   package: kh2_fifth
   platform: pc
   method: copy
   source:
   - name: Glass/LightBlue9/LightBlue98.dds
 
-- name: remastered/map/eh21.map/-9.dds
+- name: remastered/map/tt32.map/-9.dds
   package: kh2_fifth
   platform: pc
   method: copy
