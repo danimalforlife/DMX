@@ -1150,6 +1150,41 @@ assets:
   - name: Huds/DMXHud.dds
 
 
+###Gambler's Card and Dice###
+#Large Card#
+- name: remastered/obj/M_EX950_CARD.mdlx/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/DMXCardLarge.dds
+
+#Small Card#
+- name: remastered/obj/M_EX950_CARD.a.us/-4.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/DMXCardSmall.dds
+
+#Large Dice#
+- name: remastered/obj/M_EX950_DICE.mdlx/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/DMXDiceLarge.dds
+
+#Small Dice#
+- name: remastered/obj/M_EX950_DICE.a.us/-3.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/DMXDiceSmall.dds
+
+
+
 ###Journal Pictures###
 - name: remastered/menu/jmface_al.2ld/-0.dds
   multi:
@@ -1837,6 +1872,14 @@ assets:
   source:
   - name: Puzzles/DMXPuzzle60.dds
 
+
+###Puzzle Pieces###
+- name: remastered/obj/F_EX260.a.us/-0.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Puzzles/DMXPuzzlePiece.dds
 
 ###Namine's Sketches###
 
