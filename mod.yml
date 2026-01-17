@@ -1631,6 +1631,13 @@ assets:
   source:
   - name: Music/How's It Goin' Down.scd
 
+###Finishing Blow Sound Effect Replacement###
+- name: se/se000.win32.scd
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: Music/DMXFinisher.scd
 
 ###Battle Quote Replacements
 
