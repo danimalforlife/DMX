@@ -312,7 +312,7 @@ assets:
   - name: remastered/obj/P_EX100_WI.mdlx/-1.dds
   - name: remastered/obj/P_EX100_XM.mdlx/-1.dds
   - name: remastered/obj/P_EX100_MEMO.mdlx/-1.dds
-  - name: remastered/obj/_EX100_SIDECAR.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_SIDECAR.mdlx/-1.dds
   - name: remastered/obj/P_EX100_WM.mdlx.mdlx/-1.dds
   - name: remastered/obj/P_EX100_LAST.mdlx/-1.dds
   - name: remastered/obj/P_EX110_BTLF.mdlx/-1.dds
