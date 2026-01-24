@@ -1192,6 +1192,14 @@ assets:
   - name: Textures/DMXDiceSmall.dds
 
 
+###Zexion Book###
+- name: remastered/obj/B_EX410.mdlx/-1.dds
+  package: kh2_fifth
+  platform: pc
+  method: copy
+  source:
+  - name: Textures/DMXBook.dds
+
 
 ###Journal Pictures###
 - name: remastered/menu/jmface_al.2ld/-0.dds
